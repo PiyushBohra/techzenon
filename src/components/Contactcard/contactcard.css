@@ -1,0 +1,136 @@
+.contact-card {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .left-panel {
+    background-color: #ff6600;
+    color: white;
+    padding: 40px;
+    width: 50%;
+  }
+  
+  .left-panel h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .left-panel h2 span {
+    color: white;
+  }
+  
+  .left-panel p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .left-panel form input,
+  .left-panel form textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .left-panel form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  .left-panel form input::placeholder,
+  .left-panel form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .left-panel form button {
+    background: white;
+    color: #ff6600;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .left-panel form button:hover {
+    background: #f2f2f2;
+  }
+  
+  .right-panel {
+    background:url("/images/contact-card.png");
+    padding: 40px 20px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ff6600;
+    margin: 0 auto 20px;
+    object-fit: cover;
+  }
+  
+  .right-panel h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  } */
+  
+  /* .right-panel h4 {
+    margin: 5px 0 20px;
+    font-size: 14px;
+    color: #ccc;
+  } */
+  
+  .testimonial-text {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .dot.active {
+    background-color: #ff6600;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-card {
+      flex-direction: column;
+    }
+  
+    .left-panel,
+    .right-panel {
+      width: 100%;
+    }
+  }
+  

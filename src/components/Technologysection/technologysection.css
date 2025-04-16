@@ -1,0 +1,87 @@
+.tech-container {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .tech-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .tech-container strong {
+    color: #000;
+  }
+  
+  .divider {
+    width: 50px;
+    height: 3px;
+    background-color: orange;
+    margin: 0 auto 30px;
+  }
+  
+  .tech-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .image-box {
+    max-width: 600px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-box {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .text-box p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .text-box button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .tech-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .tech-list li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .tech-list li.active {
+    color: orange;
+    border-left: 2px solid orange;
+    padding-left: 8px;
+  }
+  
+  .tech-list li:hover {
+    color: orange;
+  }
+  
