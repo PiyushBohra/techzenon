@@ -8,7 +8,7 @@ const services = [
   { title: "AI/ML Development", image: "AI-ml.png" },
   { title: "Cloud & DevOps", image: "Cloud-devops.png" },
   { title: "Web Application Development", image: "web.png" },
-  { title: "Custom Software Development", image: "Custom-software-dvelopment.png" },
+  { title: "Custom Software Development", image: "custom-software-development.png" },
   { title: "AI/ML Development", image: "AI-ml-development.png"},
 ];
 
@@ -34,6 +34,10 @@ const ServiceCards = () => {
       <h2>
         Software <span className="highlight">Development</span> Services
       </h2>
+      <div class="divider-container">
+      <div class="background-divider"></div>
+       <div class="divider"></div>
+      </div>
       <div className="grid">
         {services.map((service, index) => (
           <ServiceCard key={index} title={service.title} image={service.image} />

@@ -8,6 +8,30 @@
     font-size: 2rem;
     margin-bottom: 30px;
   }
+  .divider-container {
+    position: relative;
+    top:7px;
+    width: 100%; /* You can adjust the width as needed */
+  }
+  
+  .background-divider {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 300px;
+    height: 1px; 
+    background-color: #000; 
+    z-index: -1; 
+  }
+  
+  .divider {
+    width: 70px; 
+    height: 3px; 
+    background-color: orange; 
+    margin: 0 auto 30px; 
+    position: relative; 
+  }
   
   .services-section .highlight {
     color: #f97316; /* orange */

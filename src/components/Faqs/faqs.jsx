@@ -47,7 +47,6 @@ const faqs = () => {
         </div>
       </div>
       <div className="faq-right">
-        <img src="/question-mark.png" alt="FAQ" />
       </div>
     </div>
   );

@@ -1,11 +1,28 @@
 .portfolio-section {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+  }
+  .portfolio-title{
+    font-size: 40px;
+
+  }
+  .divider-container {
+    width: 100%; 
   }
   
-  .highlight {
-    color: #FF6600;
-    font-weight: bold;
+  .background-divider {
+    position: absolute;
+    width: 300px;
+    height: 1px; 
+    background-color: #000; 
+    z-index: -1; 
+  }
+  
+  .divider {
+    width: 70px; 
+    height: 3px; 
+    background-color: orange; 
+    position: relative; 
   }
   
   .portfolio-display {

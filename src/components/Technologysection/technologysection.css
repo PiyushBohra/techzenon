@@ -5,7 +5,8 @@
   }
   
   .tech-container h2 {
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight:400;
     margin-bottom: 10px;
   }
   
@@ -13,11 +14,29 @@
     color: #000;
   }
   
+  .divider-container {
+    position: relative;
+    top:7px;
+    width: 100%; /* You can adjust the width as needed */
+  }
+  
+  .background-divider {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 300px;
+    height: 1px; 
+    background-color: #000; 
+    z-index: -1; 
+  }
+  
   .divider {
-    width: 50px;
-    height: 3px;
-    background-color: orange;
-    margin: 0 auto 30px;
+    width: 70px; 
+    height: 3px; 
+    background-color: orange; 
+    margin: 0 auto 30px; 
+    position: relative; 
   }
   
   .tech-content {

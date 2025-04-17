@@ -44,7 +44,7 @@ const digitalexpertise = () => {
 
         <div className="image-wrapper">
           <img
-            src="/images/digitalexpertise.png"
+            src="/images/digital-expertise.png"
             alt="Digital Expertise"
             className="main-image"
           />

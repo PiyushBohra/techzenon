@@ -3,7 +3,7 @@ import './technologysection.css';
 
 const techData = {
   Python: {
-    image: '/images/python.png',
+    image: '/images/python.jpg',
     text: `You need an engineering partner who can help you achieve the technological transformation you aim for without any do-overs. Your customers deserve a consistent, quality, and addictive experience, and so do you. That’s exactly what we do at Citrusbug Technolabs.`,
     buttonText: 'Hire Python Developers',
   },
@@ -50,7 +50,10 @@ const technologysection = () => {
   return (
     <div className="tech-container">
       <h2>Make Technology <strong>Simple</strong></h2>
-      <div className="divider" />
+      <div class="divider-container">
+      <div class="background-divider"></div>
+       <div class="divider"></div>
+      </div>
 
       <div className="tech-content">
         <div className="image-box">

@@ -5,7 +5,7 @@ const portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("Website");
 
   const imageMap = {
-    Website: "/images/portfolio.jpeg",
+    Website: "/images/website-portfolio-1.jpg",
     Graphic: "/images/portfolio.jpeg",
     App: "/images/portfolio.jpeg",
     SEO: "/images/portfolio.jpeg",
@@ -29,8 +29,12 @@ const portfolio = () => {
   return (
     <div className="portfolio-section">
       <h2 className="portfolio-title">
-        Our <span className="highlight">Portfolio</span>
+        Our <strong>Portfolio</strong>
       </h2>
+      <div class="divider-container">
+      <div class="background-divider"></div>
+       <div class="divider"></div>
+      </div>
 
       <div className="portfolio-image-container">
         <img

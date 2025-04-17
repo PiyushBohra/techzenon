@@ -4,7 +4,7 @@ import "./process.css";
 const steps = [
   {
     title: "Discover",
-    icon: "🧭", // Replace with your actual SVG or image icon
+    icon: "🧭", 
     desc: "Lorem Ipsum Is Simply Dummy Text Of The Printing And When An Unknown Printer Took A Galley Typesetting Industry.",
   },
   {

@@ -47,7 +47,7 @@
   
   .feature-card p {
     font-size: 0.95rem;
-    color: #555;
+    color: #000;
   }
   
   .expertise-right {
@@ -59,7 +59,7 @@
   .description {
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
-    color: #333;
+    color: #000;
   }
   
   .image-wrapper {
@@ -70,7 +70,7 @@
   
   .main-image {
     width: 100%;
-    max-width: 360px;
+    max-width: 577px;
     border-radius: 20px;
     display: block;
   }

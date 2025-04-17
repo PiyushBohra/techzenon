@@ -68,7 +68,8 @@
   }
   
   .right-panel {
-    background:url("/images/contact-card.png");
+    position: relative;
+    background: url("/images/contact-card.png");
     padding: 40px 20px;
     width: 50%;
     text-align: center;
@@ -77,6 +78,21 @@
     justify-content: center;
   }
   
+  .right-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);  
+    z-index: 1;  
+  }
+  
+  .right-panel > * {
+    position: relative;
+    z-index: 2;  
+  }
   /* .profile-pic {
     width: 100px;
     height: 100px;
