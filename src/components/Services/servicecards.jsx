@@ -33,11 +33,12 @@ const ServiceCards = () => {
     <div className="services-section">
       <h2>
         Software <span className="highlight">Development</span> Services
-      </h2>
-      <div class="divider-container">
-      <div class="background-divider"></div>
+        <div class="divider-container">
+        <div class="background-divider"></div>
        <div class="divider"></div>
       </div>
+      </h2>
+      
       <div className="grid">
         {services.map((service, index) => (
           <ServiceCard key={index} title={service.title} image={service.image} />

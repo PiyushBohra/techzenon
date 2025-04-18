@@ -41,6 +41,10 @@ const technology = () => {
     <section className="tech-section">
       <h2 className="tech-title">
         Technologies And <strong>Platforms We Use</strong>
+        <div class="divider-container">
+      <div class="background-divider"></div>
+       <div class="divider"></div>
+      </div>
       </h2>
 
       <div className="tabs">

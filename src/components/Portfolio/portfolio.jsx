@@ -30,11 +30,12 @@ const portfolio = () => {
     <div className="portfolio-section">
       <h2 className="portfolio-title">
         Our <strong>Portfolio</strong>
-      </h2>
-      <div class="divider-container">
+        <div class="divider-container">
       <div class="background-divider"></div>
        <div class="divider"></div>
       </div>
+      </h2>
+     
 
       <div className="portfolio-image-container">
         <img
