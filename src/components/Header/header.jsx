@@ -11,11 +11,11 @@ const header = () => {
         </div>
         <nav className="navigation">
           <ul>
-            <li><a href="#">AI & ML Development</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Industries</a></li>
-            <li><a href="#">Work Company</a></li>
-            <li><a href="#">Schedule Call</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Digital Services</a></li>
+            <li><a href="#">Design & Development</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
         <a href="#" className="cta-button">Get In Touch</a>

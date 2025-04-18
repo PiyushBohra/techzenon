@@ -42,15 +42,14 @@
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
     position: relative;
-    border: 2px solid #eee;
     transition: border 0.3s ease;
   }
   
   .testimonial-card.highlight {
-    border: 2px solid #ff6a00;
-    box-shadow: 0 0 0 4px rgba(255, 106, 0, 0.2);
+    border: 1px solid #ff6a00;
+   
   }
   
   .testimonial-img img {
