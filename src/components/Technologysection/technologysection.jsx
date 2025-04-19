@@ -48,12 +48,14 @@ const technologysection = () => {
   const [selectedTech, setSelectedTech] = useState('Python');
 
   return (
+    <>
     <div className="tech-container">
-      <h2>Make Technology <strong>Simple</strong></h2>
+      <h2>Make Technology <strong>Simple</strong>
       <div class="divider-container">
       <div class="background-divider"></div>
        <div class="divider"></div>
       </div>
+      </h2>
 
       <div className="tech-content">
         <div className="image-box">
@@ -77,6 +79,7 @@ const technologysection = () => {
         </ul>
       </div>
     </div>
+    </>
   );
 };
 

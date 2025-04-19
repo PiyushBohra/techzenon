@@ -1,75 +1,159 @@
-.about-section {
-    padding: 80px 20px;
-    background: #fff;
+.about-company {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-grid {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -50px; 
+}
+
+.image-container {
+  flex: 1;
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-left:40px;
+  position: relative;
+  z-index: 2;
+  margin-right: 1rem; 
+}
+
+.image-container img {
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+  margin-top: 1rem;
+  padding:20px;
+}
+
+.section-label {
+  color: #ff6600;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top:auto;
+  line-height: 1.2;
+  color: #000;
+}
+
+.main-title strong {
+  color: #000;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.stats-section {
+  background-image:url("/images/group-2.jpg");
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;   
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index:10;
+  margin-top: -110px;
+ margin-left: 215px;
+}
+
+.stats-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 100%;
+  background-color: #ff6600;
+  z-index: 1;
+}
+
+.stat {
+  text-align: center;
+  max-width: 200px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Extra component */
+
+.loader {
+  width: 38.8px;
+  height: 38.8px;
+  color: #ff6600;
+  position: relative;
+  background: radial-gradient(11.2px,currentColor 94%,#0000);
+}
+
+.loader:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,
+          radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,
+          radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,
+          radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;
+  background-size: 22.4px 22.4px;
+  background-repeat: no-repeat;
+  animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+
+@keyframes loader {
+  33% {
+    inset: -11.2px;
+    transform: rotate(0deg);
   }
-  
-  .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+  66% {
+    inset: -11.2px;
+    transform: rotate(90deg);
   }
-  
-  .about-image img {
-    max-width: 100%;
-    width:450px;
-    height:450px;
-    border-radius: 10px;
-    object-fit: cover;
+
+  100% {
+    inset: 0;
+    transform: rotate(90deg);
   }
-  
-  .about-content {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .about-label {
-    color: #f97316;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: inline-block;
-  }
-  
-  .about-content h2 {
-    font-size: 32px;
-    margin: 10px 0 20px;
-  }
-  
-  .about-content p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .cta-box {
-    margin-top: 30px;
-    padding: 24px;
-    background: linear-gradient(to right, #1f2937, #111827);
-    color: #fff;
-    border-left: 8px solid #f97316;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .contact-btn {
-    background: #fff;
-    color: #000;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  
-  .contact-btn:hover {
-    background: #f3f3f3;
-  }
-  
+}

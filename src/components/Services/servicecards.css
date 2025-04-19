@@ -11,7 +11,7 @@
   .divider-container {
     position: relative;
     top:7px;
-    width: 100%; /* You can adjust the width as needed */
+    width: 100%; 
   }
   
   .background-divider {
@@ -34,7 +34,7 @@
   }
   
   .services-section .highlight {
-    color: #f97316; /* orange */
+    color: #f97316; 
   }
   
   .grid {
@@ -76,6 +76,7 @@
     margin: 0 0 10px 0;
     font-size: 1.2rem;
     font-weight: 600;
+    text-align: start;
   }
   
   .card-tags {

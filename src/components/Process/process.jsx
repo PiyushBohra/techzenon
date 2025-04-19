@@ -27,9 +27,14 @@ const steps = [
 
 const process= () => {
   return (
+    <>
     <section className="process-section">
       <h2 className="process-title">
         Process That <strong>We Follow</strong>
+        <div class="divider-container">
+        <div class="background-divider"></div>
+        <div class="divider"></div>
+      </div>
       </h2>
 
       <div className="steps-wrapper">
@@ -46,6 +51,7 @@ const process= () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 
