@@ -83,7 +83,6 @@ const Portfolio = () => {
             onClick={() => setSelectedCategory(category)}
           >
             <span>{getCategoryLabel(category)}</span>
-            <span className="arrow">→</span>
           </button>
         ))}
       </div>

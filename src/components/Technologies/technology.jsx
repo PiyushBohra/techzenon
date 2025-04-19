@@ -34,17 +34,24 @@ const techData = {
 
 const tabs = Object.keys(techData);
 
-const technology = () => {
+const Technology = () => {
   const [activeTab, setActiveTab] = useState("FrontEnd");
 
   return (
     <section className="tech-section">
+      {/* Loader before h2 */}
+      <div className="loader-2">
+        <div className="box1"></div>
+        <div className="box2"></div>
+        <div className="box3"></div>
+      </div>
+
       <h2 className="tech-title">
         Technologies And <strong>Platforms We Use</strong>
-        <div class="divider-container">
-      <div class="background-divider"></div>
-       <div class="divider"></div>
-      </div>
+        <div className="divider-container">
+          <div className="background-divider"></div>
+          <div className="divider"></div>
+        </div>
       </h2>
 
       <div className="tabs">
@@ -71,4 +78,4 @@ const technology = () => {
   );
 };
 
-export default technology;
+export default Technology;

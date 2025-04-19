@@ -29,6 +29,7 @@ function App() {
       <Technologysection/>
       <Services/>
       <Portfolio/>
+      
       <Digitalexpertise/>
       <Technologies/>
       <Process/>

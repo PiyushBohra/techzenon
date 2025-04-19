@@ -88,16 +88,6 @@
   transition: all 0.3s ease;
 }
 
-.portfolio-button .arrow {
-  margin-left: 0.5rem;
-  font-size: 1.2rem;
-  color: #ff6600;
-  transition: transform 0.3s ease;
-}
-
-.portfolio-button:hover .arrow {
-  transform: translateX(5px);
-}
 
 .portfolio-button.active {
   background-color: #ff6600;

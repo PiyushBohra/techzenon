@@ -76,3 +76,45 @@ body {
     background-color: #e65500;
   }
   
+/* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .navigation ul {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+  
+    .cta-button {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-text h1 {
+      font-size: 16px;
+    }
+  
+    .logo-text p {
+      font-size: 10px;
+    }
+  
+    .navigation a {
+      font-size: 14px;
+    }
+  
+    .cta-button {
+      padding: 12px 25px;
+    }
+  }
+  

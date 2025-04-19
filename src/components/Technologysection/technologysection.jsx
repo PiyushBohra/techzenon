@@ -51,9 +51,9 @@ const technologysection = () => {
     <>
     <div className="tech-container">
       <h2>Make Technology <strong>Simple</strong>
-      <div class="divider-container">
-      <div class="background-divider"></div>
-       <div class="divider"></div>
+      <div className="divider-container">
+      <div className="background-divider"></div>
+       <div className="divider"></div>
       </div>
       </h2>
 

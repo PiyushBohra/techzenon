@@ -1,13 +1,13 @@
 .tech-container {
     text-align: center;
     padding: 40px 20px;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .tech-container h2 {
     font-size: 40px;
     font-weight:400;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .tech-container strong {
@@ -16,8 +16,8 @@
   
   .divider-container {
     position: relative;
-    top:7px;
-    width: 100%; /* You can adjust the width as needed */
+    height:2px;
+    width: 100%; 
   }
   
   .background-divider {
@@ -48,6 +48,7 @@
   }
   
   .image-box {
+    margin-left:120px;
     max-width: 600px;
     background: #000;
     color: #fff;
@@ -87,7 +88,7 @@
   }
   
   .tech-list li {
-    padding: 10px 0;
+    padding: 10px 10px;
     cursor: pointer;
     color: #000;
     font-weight: 500;
