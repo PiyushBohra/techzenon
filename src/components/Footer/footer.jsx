@@ -13,10 +13,11 @@ const footer = () => {
         <input className='newsletterinput'/>
         <button className="subscribe-btn">Subscribe</button> </div>
       </div>
+      
 
       <div className="footer-content">
         <div className="footer-section logo-section">
-          <img src="/images/logo.png" alt="Tech Zenon Logo" className="logo" />
+          <img src="/images/footer-logo.png" alt="Tech Zenon Logo" className="footer-logo " />
           <p>
             Tech Zenon IT Solutions Pvt Ltd. is a Digital Marketing, Website Development and
             Application Development Agency that assists businesses with accessing multiple media
@@ -65,18 +66,18 @@ const footer = () => {
       </div>
 
       <div className="footer-contact">
-        <p>📍 B-149 2nd Floor, Sector 63, Noida, UP, India 201301</p>
-        <p>📞 +91 98719 37754</p>
-        <p>✉️ info@techzenon.com</p>
+        <p className="address">📍 B-149 2nd Floor, Sector 63, Noida, UP, India 201301</p>
+        <div className="container-2"><p className="phone">📞 +91 98719 37754</p>
+        <p className="email">✉️ info@techzenon.com</p></div>
       </div>
 
       <div className="footer-bottom">
         <p>©Copyright | Tech Zenon | All Rights Reserved</p>
         <div className="social-icons">
-          <i className="fa fa-facebook"></i>
-          <i className="fa fa-instagram"></i>
-          <i className="fa fa-twitter"></i>
-          <i className="fa fa-linkedin"></i>
+          <i class="fab fa-facebook"></i>
+          <i className="fab fa-instagram"></i>
+          <i className="fab fa-twitter"></i>
+          <i className="fab fa-linkedin"></i>
         </div>
       </div>
     </footer>
