@@ -39,12 +39,7 @@ const Technology = () => {
 
   return (
     <section className="tech-section">
-      {/* Loader before h2 */}
-      <div className="loader-2">
-        <div className="box1"></div>
-        <div className="box2"></div>
-        <div className="box3"></div>
-      </div>
+
 
       <h2 className="tech-title">
         Technologies And <strong>Platforms We Use</strong>

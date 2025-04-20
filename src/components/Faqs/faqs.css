@@ -1,13 +1,15 @@
 .faq-section {
     background:url("/images/questionmark.jpg");
     background-position: center;
-    height:80vh;
+    background-size: cover;
+    min-height:70vh;
     display: flex;
     justify-content: space-between;
     padding: 40px;
     color: white;
     align-items: flex-start;
     gap: 30px;
+    
   }
   
   .faq-left {
