@@ -1,23 +1,29 @@
 .footer {
     background: #111;
     color: #fff;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
+    padding: 20px 20px;
+   
   }
   
   .newsletter {
-    text-align: center;
-    margin-bottom: 30px;
+    display:flex;
+    margin-bottom: 25px;
+    justify-content:space-between;
+    padding: 10px;
   }
   
   .newsletter h2 {
-    font-size: 24px;
+    font-size: 35px;
     margin-bottom: 10px;
+
   }
   
   .newsletter p {
-    font-size: 14px;
+    font-size: 20px;
     color: #ccc;
+  }
+  .newsletterinput{
+    padding:10px 35px;
   }
   
   .subscribe-btn {

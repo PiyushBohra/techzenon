@@ -5,9 +5,13 @@ const footer = () => {
     <>
     <footer className="footer">
       <div className="newsletter">
+        <div>
         <h2>NEWSLETTER</h2>
-        <p>Receive Our Newsletter and Discover Our Stories, Collections, and Surprises.</p>
-        <button className="subscribe-btn">Subscribe</button>
+        </div>
+        <div><p>Receive Our Newsletter and Discover Our <br/>Stories, Collections, and Surprises.</p></div>
+        <div>
+        <input className='newsletterinput'/>
+        <button className="subscribe-btn">Subscribe</button> </div>
       </div>
 
       <div className="footer-content">
