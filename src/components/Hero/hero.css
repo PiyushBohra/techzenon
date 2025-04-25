@@ -110,16 +110,29 @@
   
     .subtitle {
       font-size: 16px;
+      line-height: 1.5;
     }
   
     .reviews {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 15px;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;       
+      -ms-overflow-style: none;    
     }
   
-    .reviews div {
+    .reviews::-webkit-scrollbar {
+      display: none;               
+    }
+  
+    .reviews > div {
+      flex: 0 0 auto;
       font-size: 12px;
+      padding: 5px 10px;
     }
   
     .expertise-heading {
@@ -145,14 +158,39 @@
     .hero-text h1 {
       font-size: 24px;
       margin: 10px 0 12px;
+      font-weight: 600;
     }
   
     .subtitle {
       font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    .reviews {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  
+    .reviews::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .reviews > div {
+      flex: 0 0 auto;
+      font-size: 12px;
+      padding: 5px 10px;
     }
   
     .reviews img {
       height: 35px;
+      flex-shrink: 0;
     }
   
     .cta-button {
@@ -170,4 +208,5 @@
       font-size: 12px;
     }
   }
+  
   

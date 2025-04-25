@@ -24,7 +24,7 @@ const Hero = () => {
             </h1>
           </div>
 
-          {/* Expertise Areas */}
+          
           <p className="expertise-heading">Key Areas Of <span className="highlight">Our Expertise</span></p>
           <div className="expertise-buttons">
             <button>💻 Software Development</button>
@@ -36,7 +36,7 @@ const Hero = () => {
             <button>🏢 Salesforce Solutions</button>
           </div>
 
-          {/* CTA */}
+          
           <a href="#" className="cta-button">Let's Talk About Your Business ➤</a>
         </div>
       </div>

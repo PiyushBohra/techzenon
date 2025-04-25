@@ -4,7 +4,7 @@ import "./process.css";
 const steps = [
   {
     title: "Discover",
-    icon: "🧭", 
+    icon: "🧭",
     desc: "Lorem Ipsum Is Simply Dummy Text Of The Printing And When An Unknown Printer Took A Galley Typesetting Industry.",
   },
   {
@@ -25,34 +25,37 @@ const steps = [
   },
 ];
 
-const process= () => {
+const Process = () => {
   return (
-    <>
     <section className="process-section">
       <h2 className="process-title">
         Process That <strong>We Follow</strong>
-        <div class="divider-container">
-        <div class="background-divider"></div>
-        <div class="divider"></div>
-      </div>
+        <div className="divider-container">
+          <div className="background-divider"></div>
+          <div className="divider"></div>
+        </div>
       </h2>
 
       <div className="steps-wrapper">
         {steps.map((step, index) => (
-          <div
-            key={index}
-            className={`step-card ${step.highlight ? "highlight" : ""}`}
-          >
-            <div className="icon">{step.icon}</div>
-            <h3>{step.title}</h3>
-            <p>{step.desc}</p>
+          <div key={index} className="step-card">
+            <div className="card-inner">
+              <div className="card-front">
+                <div className="icon" role="img" aria-label={step.title}>
+                  {step.icon}
+                </div>
+                <h3>{step.title}</h3>
+              </div>
+              <div className="card-back">
+                <p>{step.desc}</p>
+              </div>
+            </div>
             {index < steps.length - 1 && <div className="arrow">➔</div>}
           </div>
         ))}
       </div>
     </section>
-    </>
   );
 };
 
-export default process;
+export default Process;

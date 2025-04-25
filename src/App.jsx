@@ -12,8 +12,6 @@ import Process from './components/Process/process.jsx';
 import Faqs from './components/Faqs/faqs.jsx';
 import Testimonials from './components/Testimonials/testimonials.jsx';
 import Contactcard from './components/Contactcard/contactcard.jsx';
-
-
 import './index.css';
 
 
@@ -29,7 +27,6 @@ function App() {
       <Technologysection/>
       <Services/>
       <Portfolio/>
-      
       <Digitalexpertise/>
       <Technologies/>
       <Process/>
@@ -37,6 +34,7 @@ function App() {
       <Testimonials/>
       <Contactcard/>
       <Footer/>
+      
     </>
   )
 }

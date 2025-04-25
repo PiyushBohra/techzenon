@@ -76,19 +76,23 @@
 .portfolio-buttons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+ 
 }
 
 .portfolio-button {
   background-color: white;
   border: 1px solid #ff6600;
   color: #333;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   cursor: pointer;
   font-weight: bold;
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
+}
+.portfolio-buttons button{
+  font-size: 10px;
+  font-weight:300;
 }
 
 
@@ -97,7 +101,47 @@
   color: white;
 }
 
-.portfolio-button.active .arrow {
-  color: white;
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 30px;
+  }
+
+  .portfolio-image-container {
+    height: 300px; 
+  }
+
+  .portfolio-image {
+    max-width: 90%; 
+    height:100%;
+  }
+
+  .portfolio-buttons {
+    flex-direction: row; 
+  }
+
+  .portfolio-button {
+    padding: 1rem 2rem; 
+    margin-bottom: 1rem; 
+  }
 }
+
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 24px; 
+  }
+
+  .portfolio-image-container {
+    height: 250px; 
+  }
+
+  .portfolio-image {
+    max-width: 100%; 
+  }
+
+  .portfolio-button {
+    padding: 0.8rem 1.5rem; 
+    font-size: 16px; 
+  }
+}
+
 
