@@ -2,18 +2,15 @@ import React from 'react';
 import './servicecards.css';
 
 const services = [
-  { title: "Saas Development", image: "saas-development.png" },
-  { title: "Web Application Development", image: "web-application.png" },
-  { title: "Custom Software Development", image: "custom-software.png" },
-  { title: "AI/ML Development", image: "AI-ml.png" },
-  { title: "Cloud & DevOps", image: "Cloud-devops.png" },
-  { title: "Web Application Development", image: "web.png" },
-  { title: "Custom Software Development", image: "custom-software-development.png" },
-  { title: "AI/ML Development", image: "AI-ml-development.png"},
+  { title: "Saas Development", image: "saas-development.png" , icon:"saas.png"},
+  { title: "Web Application Development", image: "web-application.png", icon:"web-development.png" },
+  { title: "Custom Software Development", image: "custom-software.png", icon:"" },
+  { title: "AI/ML Development", image: "AI-ml.png", icon:""},
+  { title: "Cloud & DevOps", image: "Cloud-devops.png", icon:"" },
 ];
 
 
-const ServiceCard = ({ title, image }) => (
+const ServiceCard = ({ title, image,icon }) => (
   <div className="card">
     <img src={`/images/${image}`} alt={title} className="card-image" />
     <div className="card-overlay">

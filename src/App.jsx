@@ -1,9 +1,9 @@
 import Header from './components/Header/header.jsx';
 import Hero from './components/Hero/hero.jsx';
 import Footer from './components/Footer/footer.jsx';
+import Partners from './components/Partners/partners.jsx';
 import About from './components/About/about.jsx';
 import Services from './components/Services/servicecards.jsx';
-import Portfolio from './components/Portfolio/portfolio.jsx';
 import Digitalexpertise from './components/Digitalexpertise/digitalexpertise.jsx';
 import Technologies from './components/Technologies/technology.jsx';
 import Process from './components/Process/process.jsx';
@@ -20,9 +20,9 @@ function App() {
     <>
       <Header/>
       <Hero/>
+      <Partners/>
       <About/>
       <Services/>
-      <Portfolio/>
       <Digitalexpertise/>
       <Technologies/>
       <Process/>

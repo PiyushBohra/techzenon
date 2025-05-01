@@ -1,0 +1,36 @@
+.partners-section {
+   
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    
+  }
+  
+  .partners-section h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight:600;
+   
+}
+ .reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .reviews div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+   .reviews img {
+    height: 50px;
+  }
+  
+  
+ 
