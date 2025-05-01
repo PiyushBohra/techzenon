@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #000;
   }
   
   .site-header {
-    background-color: #fff;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     padding: 10px 0;
   }
@@ -25,7 +25,7 @@ body {
   }
   
   .logo img {
-    height: 40px;
+    height: 60px;
   }
   
   .logo-text h1 {
@@ -53,27 +53,27 @@ body {
   
   .navigation a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: 500;
     transition: color 0.3s ease;
   }
   
-  .navigation a:hover {
+  /* .navigation a:hover {
     color: #ff6600;
-  }
+  } */
   
-  .cta-button {
-    background-color: #ff6600;
+  .cta-button-header {
+    background-color:#1163FB;
     color: #fff;
-    padding: 10px 20px;
+    padding: 13px 47px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s ease;
   }
   
-  .cta-button:hover {
-    background-color: #e65500;
+  .cta-button-header:hover {
+    background-color: #1163FB;
   }
   
 /* Responsive */
@@ -95,7 +95,7 @@ body {
       align-items: flex-start;
     }
   
-    .cta-button {
+    .cta-button-header{
       width: 100%;
       text-align: center;
       margin-top: 15px;
@@ -115,7 +115,7 @@ body {
       font-size: 14px;
     }
   
-    .cta-button {
+    .cta-button-header{
       padding: 12px 15px;
     }
   }

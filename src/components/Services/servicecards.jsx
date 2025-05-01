@@ -12,7 +12,6 @@ const services = [
   { title: "AI/ML Development", image: "AI-ml-development.png"},
 ];
 
-const tags = ["UI/UX", "Web", "Mobile", "DevOps", "AI"];
 
 const ServiceCard = ({ title, image }) => (
   <div className="card">
@@ -20,9 +19,7 @@ const ServiceCard = ({ title, image }) => (
     <div className="card-overlay">
       <h3>{title}</h3>
       <div className="card-tags">
-        {tags.map((tag) => (
-          <span key={tag}>{tag}</span>
-        ))}
+        
       </div>
     </div>
   </div>
@@ -32,11 +29,7 @@ const ServiceCards = () => {
   return (
     <div className="services-section">
       <h2>
-        Software <span className="highlight">Development</span> Services
-        <div class="divider-container">
-        <div class="background-divider"></div>
-       <div class="divider"></div>
-      </div>
+      Core Services we provide
       </h2>
       
       <div className="grid">

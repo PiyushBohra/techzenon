@@ -7,7 +7,7 @@ const header = () => {
     <header className="site-header">
       <div className="container">
         <div className="logo">
-          <img src="/images/company-logo.jpg" alt="Tech Zenon Logo" />
+          <img src="/images/footer-logo.png" alt="Tech Zenon Logo" />
         </div>
         <nav className="navigation">
           <ul>
@@ -18,7 +18,7 @@ const header = () => {
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <a href="#" className="cta-button">Get In Touch</a>
+        <a href="#" className="cta-button-header">Get In Touch</a>
       </div>
     </header></>
   )

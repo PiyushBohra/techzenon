@@ -2,8 +2,6 @@ import Header from './components/Header/header.jsx';
 import Hero from './components/Hero/hero.jsx';
 import Footer from './components/Footer/footer.jsx';
 import About from './components/About/about.jsx';
-import Technologysection from './components/Technologysection/technologysection.jsx';
-import Clientlogos from './components/Clientlogos/clientlogos.jsx';
 import Services from './components/Services/servicecards.jsx';
 import Portfolio from './components/Portfolio/portfolio.jsx';
 import Digitalexpertise from './components/Digitalexpertise/digitalexpertise.jsx';
@@ -22,9 +20,7 @@ function App() {
     <>
       <Header/>
       <Hero/>
-      <Clientlogos/>
       <About/>
-      <Technologysection/>
       <Services/>
       <Portfolio/>
       <Digitalexpertise/>

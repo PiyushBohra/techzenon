@@ -1,31 +1,32 @@
 import React from 'react';
 import './hero.css';
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <section className="hero-section">
       <div className="overlay">
         <div className="hero-container">
-          
-          <div className="reviews">
-            <div><img src="/images/google.png" alt="Google" /></div>
-            <div><img src="/images/Gartner.png" alt="Gartner" /></div>
-            <div><img src="/images/awards.png" alt="G2" /></div>
-            <div><img src="/images/hubspot.png" alt="Hubspot" /></div>
-            <div><img src="/images/clutch.png" alt="Clutch" /></div>
-          </div>
 
-          
+          {/* Uncomment this if you want to show logos */}
+          {/* <div className="reviews">
+            <div><img src="/images/google.png" alt="Google Reviews" /></div>
+            <div><img src="/images/Gartner.png" alt="Gartner Recognition" /></div>
+            <div><img src="/images/awards.png" alt="G2 Awards" /></div>
+            <div><img src="/images/hubspot.png" alt="Hubspot Partner" /></div>
+            <div><img src="/images/clutch.png" alt="Clutch Verified" /></div>
+          </div> */}
+
           <div className="hero-text">
-            <p className="subtitle">Digital Marketing Agency</p>
+            {/* <p className="subtitle">Digital Marketing Agency</p> */}
             <h1>
               <span className="highlight">Turning Ideas</span> Into <br />
               <strong>Creative Digital Solutions</strong>
             </h1>
           </div>
 
-          
-          <p className="expertise-heading">Key Areas Of <span className="highlight">Our Expertise</span></p>
+          {/* Uncomment if needed */}
+          {/* <p className="expertise-heading">Key Areas Of <span className="highlight">Our Expertise</span></p>
           <div className="expertise-buttons">
             <button>💻 Software Development</button>
             <button>☁️ Cloud Solutions</button>
@@ -34,10 +35,11 @@ const Hero = () => {
             <button>📱 Mobile App Development</button>
             <button>🧱 Website Development</button>
             <button>🏢 Salesforce Solutions</button>
-          </div>
+          </div> */}
 
-          
-          <a href="#" className="cta-button">Let's Talk About Your Business ➤</a>
+          <a href="#" className="cta-button" onClick={(e) => e.preventDefault()}>
+            CONSULT OUR EXPERT <FaArrowCircleRight />
+          </a>
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@
   }
   
   .left-panel {
-    background-color: #ff6600;
+    background-color: #1163FB;
     color: white;
     padding: 40px;
     width: 50%;
@@ -54,7 +54,7 @@
   
   .left-panel form button {
     background: white;
-    color: #ff6600;
+    color: #1163FB;
     font-weight: bold;
     border: none;
     padding: 10px 20px;
