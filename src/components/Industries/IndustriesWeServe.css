@@ -1,0 +1,88 @@
+.industries-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #000;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .industries-content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .industries-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .industry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .industry-list li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .industry-list li span {
+    color: #007bff;
+  }
+  
+  .industry-list li.active span {
+    color: #00aaff;
+  }
+  
+  .industry-list li p {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 10px;
+    max-width: 400px;
+  }
+  
+  .industries-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 450px;
+    margin-top: 20px;
+  }
+  
+  .industries-image-wrapper img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .experience-badge .number {
+    font-size: 40px;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  

@@ -4,13 +4,14 @@ import Footer from './components/Footer/footer.jsx';
 import Partners from './components/Partners/partners.jsx';
 import About from './components/About/about.jsx';
 import Services from './components/Services/servicecards.jsx';
-import Digitalexpertise from './components/Digitalexpertise/digitalexpertise.jsx';
-import Technologies from './components/Technologies/technology.jsx';
-import Process from './components/Process/process.jsx';
-import Faqs from './components/Faqs/faqs.jsx';
+import Industries from './components/Industries/IndustriesWeServe.jsx';
+import Techcapabilites from './components/Techcapabilites/TechCapabilities.jsx';
 import Testimonials from './components/Testimonials/testimonials.jsx';
+import Clientsection from './components/Clientsection/ClientSection.jsx';
 import Contactcard from './components/Contactcard/contactcard.jsx';
 import './index.css';
+import ClientReviews from './components/Clientreviews/ClientReviews.jsx';
+import Portfolio from './components/Portfolio/Portfolio.jsx';
 
 
 function App() {
@@ -23,11 +24,12 @@ function App() {
       <Partners/>
       <About/>
       <Services/>
-      <Digitalexpertise/>
-      <Technologies/>
-      <Process/>
-      <Faqs/>
       <Testimonials/>
+      <Industries/>
+      <Techcapabilites/>
+      <ClientReviews/>
+      <Portfolio/>
+      <Clientsection/>
       <Contactcard/>
       <Footer/>
       
