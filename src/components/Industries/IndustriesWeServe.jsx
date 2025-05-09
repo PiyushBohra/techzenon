@@ -1,12 +1,18 @@
 import React from 'react'
 import './IndustriesWeServe.css'
+import { PiCubeDuotone } from "react-icons/pi";
 
 const IndustriesWeServe = () => {
   return (
     <>
     <section className="industries-section">
       <div className="industries-content">
-        <p className="subtitle">Industries We Serve</p>
+      <p className="subtitle">
+  <span style={{ marginRight: '8px'}}>
+    <PiCubeDuotone />
+  </span>
+  Industries We Serve
+</p>
         <h2>Tech Zenon IT Solutions For<br />Your Industry's Needs</h2>
 
         <ul className="industry-list">

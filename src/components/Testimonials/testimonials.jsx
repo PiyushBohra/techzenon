@@ -4,16 +4,16 @@ import "./testimonials.css";
 
 const testimonialsData = [
   {
-    text: "Lorem Ipsum is simply dummy text of the printing industry.",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     name: "Bill Walsh",
     title: "CEO, IT Company",
-    img: "/images/testimonial.png",
+    img: "/images/client1.png",
   },
   {
-    text: "It has been the industry's standard dummy text since the 1500s.",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     name: "Alice Smith",
     title: "Manager, Tech Corp",
-    img: "/images/testimonial.png",
+    img: "/images/client1.png",
   },
 ];
 
@@ -21,7 +21,7 @@ const Testimonials = () => {
   const settings = {
     centerMode: true,
     infinite: true,
-    centerPadding: "100px", // Creates space around center slide
+    centerPadding: "100px", 
     slidesToShow: 2,
     speed: 500,
     focusOnSelect: true,

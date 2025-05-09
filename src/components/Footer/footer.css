@@ -63,6 +63,9 @@
     flex: 1 1 200px;
     margin: 10px;
   }
+  .footer-section-1{
+    padding-left:80px;
+  }
   
   .footer-section h4 {
     font-size: 16px;
@@ -98,7 +101,7 @@
     color: #ccc;
     
   }
-  
+/*   
   .footer-contact .address {
     display: inline-block;
     border:1px solid #fff;
@@ -121,7 +124,7 @@
     padding:10px 19px;
     margin:0px;
   }
-  
+   */
   
   .footer-bottom {
     display:flex;
@@ -149,8 +152,8 @@
   }
   
   .social-icons i:hover {
-    color: #ff5c00;
-    border:1px solid #ff5c00
+    color: #1a73e8;
+    border:1px solid #1a73e8;
   }
   
   /* Responsive */

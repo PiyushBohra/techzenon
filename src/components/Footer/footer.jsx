@@ -26,7 +26,7 @@ const footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4>QUICK LINKS</h4>
+          <div className="footer-section-1"><h4>QUICK LINKS</h4>
           <ul>
             <li>Home</li>
             <li>About us</li>
@@ -35,6 +35,7 @@ const footer = () => {
             <li>Portfolio</li>
             <li>Contact</li>
           </ul>
+          </div>
         </div>
 
         <div className="footer-section">
@@ -65,11 +66,11 @@ const footer = () => {
         </div>
       </div>
 
-      <div className="footer-contact">
+      {/* <div className="footer-contact">
         <p className="address">📍 B-149 2nd Floor, Sector 63, Noida, UP, India 201301</p>
         <div className="container-2"><p className="phone">📞 +91 98719 37754</p>
         <p className="email">✉️ info@techzenon.com</p></div>
-      </div>
+      </div> */}
 
       <div className="footer-bottom">
         <p>©Copyright | Tech Zenon | All Rights Reserved</p>

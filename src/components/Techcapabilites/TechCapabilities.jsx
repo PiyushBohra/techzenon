@@ -8,22 +8,19 @@ const technologies = {
     ['javascript', 'Javascript'],
     ['angular', 'Angular'],
     ['react', 'React'],
-    ['vuejs', 'Vue.js'],
-    ['ember', 'Ember'],
-    ['meteor', 'Meteor'],
-    ['nextjs', 'Next.js'],
+    ['vue', 'Vue'],
   ],
   'Backend Programming Languages': [
-    ['nodejs', 'Node.js'],
+    ['node-js', 'Node-js'],
     ['python', 'Python'],
     ['java', 'Java'],
     ['ruby', 'Ruby'],
     ['php', 'PHP'],
-    ['golang', 'Go'],
+    ['go', 'Go'],
   ],
   'Mobile': [
     ['flutter', 'Flutter'],
-    ['reactnative', 'React Native'],
+    ['react-native', 'React-Native'],
     ['swift', 'Swift'],
     ['kotlin', 'Kotlin'],
     ['android', 'Android'],
@@ -33,21 +30,17 @@ const technologies = {
     ['hadoop', 'Hadoop'],
     ['spark', 'Apache Spark'],
     ['kafka', 'Kafka'],
-    ['hive', 'Hive'],
-    ['storm', 'Storm'],
   ],
   'Databases / Data Storages': [
     ['mysql', 'MySQL'],
     ['postgresql', 'PostgreSQL'],
     ['mongodb', 'MongoDB'],
-    ['redis', 'Redis'],
     ['sqlite', 'SQLite'],
   ],
   'Cloud DB, Warehouses And Storage': [
     ['aws', 'AWS S3'],
-    ['azure', 'Azure Storage'],
-    ['gcp', 'Google Cloud Storage'],
-    ['bigquery', 'BigQuery'],
+    ['azure-storage', 'Azure-Storage'],
+    ['google-cloud', 'Google Cloud Storage'],
     ['snowflake', 'Snowflake'],
   ],
   'DevOps': [
@@ -56,9 +49,10 @@ const technologies = {
     ['jenkins', 'Jenkins'],
     ['ansible', 'Ansible'],
     ['terraform', 'Terraform'],
-    ['githubactions', 'GitHub Actions'],
+    ['github', 'GitHub Actions'],
   ],
 };
+
 
 const TechCapabilities = () => {
   const [activeTab, setActiveTab] = useState('Frontend Programming Languages');
@@ -73,6 +67,14 @@ const TechCapabilities = () => {
       }, 300); 
     }
   };
+
+  useEffect(() => {
+    let timeout;
+    if (isAnimating) {
+      timeout = setTimeout(() => setIsAnimating(false), 300);
+    }
+    return () => clearTimeout(timeout);
+  }, [isAnimating]);
 
   return (
     <section className="tech-section">
@@ -100,7 +102,7 @@ const TechCapabilities = () => {
         <div className={`tech-grid ${isAnimating ? 'fade-out' : 'fade-in'}`}>
           {technologies[activeTab].map(([key, label]) => (
             <div className="tech-card" key={key}>
-              <img src={`/icons/${key}.svg`} alt={label} />
+              <img src={`/icons/${key}.png`} alt={label} />
               <span>{label}</span>
             </div>
           ))}
