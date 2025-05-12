@@ -4,15 +4,15 @@ import './Portfolio.css';
 const portfolioData = [
   {
     title: 'Website Designs',
-    image: '/images/website-design.png',
+    image: '/images/portfolio-1.png',
   },
   {
     title: 'App Development',
-    image: '/images/app-development.png',
+    image: '/images/portfolio-2.png',
   },
   {
     title: 'SEO',
-    image: '/images/seo.png',
+    image: '/images/portfolio-3.png',
   }
 ];
 
