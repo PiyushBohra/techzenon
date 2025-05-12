@@ -1,50 +1,90 @@
-import React from 'react'
-import './IndustriesWeServe.css'
+import React, { useState } from 'react';
+import './IndustriesWeServe.css';
 import { PiCubeDuotone } from "react-icons/pi";
 
+const industries = [
+  {
+    name: "Logistic",
+    description: "Optimize your supply chain with our AI-powered logistics solutions, ensuring timely deliveries and cost-effective operations."
+  },
+  {
+    name: "Business",
+    description: "Boost operational efficiency and decision-making with customized IT solutions tailored to your business needs."
+  },
+  {
+    name: "Media & Entertainment",
+    description: "Deliver immersive digital experiences through AI-enhanced content creation and audience engagement platforms."
+  },
+  {
+    name: "Banking & Finance",
+    description: "Secure, automate, and modernize your financial services using advanced fintech solutions and analytics tools."
+  },
+  {
+    name: "Education & E-Learning",
+    description: "Transform learning experiences with interactive platforms, AI tutors, and real-time performance tracking."
+  },
+  {
+    name: "Wellness & Fitness",
+    description: "Enable personalized wellness journeys with smart tracking, virtual coaching, and health data analytics."
+  },
+  {
+    name: "Sports",
+    description: "Revolutionize training and fan engagement through data-driven insights and immersive technology in sports."
+  },
+  {
+    name: "Travel & Hospitality",
+    description: "Deliver seamless travel experiences using intelligent booking systems and personalized customer service."
+  },
+  {
+    name: "Retail & E-Commerce",
+    description: "Drive sales and customer satisfaction with AI-based product recommendations, inventory tools, and chatbots."
+  },
+  {
+    name: "Healthcare",
+    description: "Enhance patient care and operational workflows with telemedicine, EHR systems, and predictive analytics."
+  }
+];
+
 const IndustriesWeServe = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleItem = (index) => {
+    setActiveIndex(prev => (prev === index ? null : index));
+  };
+
   return (
-    <>
     <section className="industries-section">
       <div className="industries-content">
-      <p className="subtitle">
-  <span style={{ marginRight: '8px'}}>
-    <PiCubeDuotone />
-  </span>
-  Industries We Serve
-</p>
+        <p className="subtitle">
+          <span style={{ marginRight: '8px' }}>
+            <PiCubeDuotone />
+          </span>
+          Industries We Serve
+        </p>
+
         <h2>Tech Zenon IT Solutions For<br />Your Industry's Needs</h2>
 
         <ul className="industry-list">
-          <li className="active">
-            <span>+ Logistic</span>
-            <p>
-              Empower Your Business With Cutting-Edge AI Solutions. Leverage Our AI-Driven Applications To Enhance Scalability,
-              Automation, And Efficiency For Seamless Operations In Your Industry.
-            </p>
-          </li>
-          <li><span>+ Business</span></li>
-          <li><span>+ Media & Entertainment</span></li>
-          <li><span>+ Banking & Finance</span></li>
-          <li><span>+ Education & E-Learning</span></li>
-          <li><span>+ Wellness & Fitness</span></li>
-          <li><span>+ Sports</span></li>
-          <li><span>+ Travel & Hospitality</span></li>
-          <li><span>+ Retail & E-Commerce</span></li>
-          <li><span>+ Healthcare</span></li>
+          {industries.map((industry, index) => (
+            <li
+              key={index}
+              className={`industry-item ${activeIndex === index ? 'active' : ''}`}
+              onClick={() => toggleItem(index)}
+            >
+              <span>+ {industry.name}</span>
+              {activeIndex === index && <p>{industry.description}</p>}
+            </li>
+          ))}
         </ul>
       </div>
 
       <div className="industries-image-wrapper">
-        {/* <img src={meetingImage} alt="Business Meeting" /> */}
         <div className="experience-badge">
-          <span className="number">9</span>
-          <span className="text">Years Of Experience</span>
+          <img src="/images/industriesWeServe.png" alt="Industries illustration" />
         </div>
       </div>
     </section>
-    </>
-  )
-}
+  );
+};
 
-export default IndustriesWeServe
+export default IndustriesWeServe;

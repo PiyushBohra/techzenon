@@ -62,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
-    padding: 30px;
+    padding:80px;
     flex: 1;
   }
   

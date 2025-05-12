@@ -1,6 +1,6 @@
 .industries-section {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     padding: 60px 20px;
     background-color: #000;
     color: white;
@@ -64,13 +64,14 @@
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: #000;
   }
   
   .experience-badge {
     position: absolute;
     bottom: -20px;
     left: -20px;
-    background-color: white;
+    background-color: #000;
     color: black;
     padding: 10px 20px;
     border-radius: 50px;
